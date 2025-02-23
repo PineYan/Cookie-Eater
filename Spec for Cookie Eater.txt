@@ -1,0 +1,69 @@
+Spec for Cookie Eater
+
+Cookie eater is a game that is played on a 2D grid.
+
+The player controls a snake that can move around the grid.
+
+The player can collect cookies by moving onto the same cell as a cookie.
+
+When a cookie is eaten, the snake grows in length by 1 cell.
+
+The game ends when the snake moves out of bounds or when the snake moves onto itself.
+
+The player can also buy upgrades to the snake.
+
+Player can select the grid size at the start of the game. The size can be any rectanglar grid, maximum size is 100x100.
+
+Player can select the difficulty at the start of the game. The difficulty can be one of the following:
+
+- Easy: there will be no obstacles in the grid
+- Hard: there will be obstacles in the grid
+
+The background of the game will be a light color, the snake will be a different color, the cookies will be a different color, and the obstacles will be a different color.
+Show a water ripple effect when the snake eats a cookie.
+Show "Yum" when the snake eats a cookie and play the sound effect of eating a cookie.
+When the game is over, play sound file "gameover.m4a"
+
+Use python and pygame to make the game.
+User use the arrow keys to move the snake.
+The game should start with snake paused in the center of the grid.
+The player should be able to press the any key to start the game.
+The player should be able to press the space bar to pause the game.
+The player should be able to press the space bar to restart the game.
+The player should be able to press the space bar to quit the game.
+
+UI design
+
+The snake should have a head with two dots on the head to indicate the direction of the snake. It should have a darker color than the body.
+When snake size is longer than 2, there should be tail.
+The head and tail should be rounded to look like a snake.
+make the snake thinner than the cookie.
+Snake should be continuous.
+When snake turns, there should not be gap in the snake, put round corner.
+Show the boundary of the grid, same color as the obstacles.
+
+The cookie should be a circle with dots on the cookie. Colored like a cookie.
+The score should be displayed as number of cookies eaten.
+The length of the snake should be displayed as a number.
+The selection of grid and difficulty should be within the game screen. Allow mouse to select the difficulty and grid size.
+Allow user to type the grid size in the text boxes. 
+Difficuty selected should be highlighted.
+The text should be displayed in the center of the game screen all the time. Resize the text to fit the screen. It should be opposite to the background color.
+Make the font like old school game font and larger
+
+Allow the window to resize and scale the game screen accordingly.
+
+Upgrade system
+Following upgrades are available:
+with 5 cookies, player can buy an yellow star upgrade to slow the snake by 20% in the next 30 seconds.
+with 10 cookies, player can buy an red star upgrade to slow the snake by 50% in the next 30 seconds.
+with 15 cookies, player can buy an blue star upgrade to shorten the snake by 5
+with 20 cookies, player can buy an green star upgrade to shorten the snake by 10
+with 30 cookies, player can buy an gold star upgrade to go through the wall and turn back to the other side.
+During the game, when it is paused, the upgrade menu should be displayed.
+User can click on the upgrade to buy it.
+If user buy an upgrade, the corresponding upgrade should be displayed on the screen, and cookie count should be reduced.
+If there is no enough cookies, the upgrade button should be grayed out.
+User should can click space bar to resume game.
+
+add a menu item in the application menu to select the difficulty. Allow user to select the difficulty from the menu when game over.
